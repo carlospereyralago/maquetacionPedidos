@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/app.css">
+  <link rel="stylesheet" href="style/reset.css">
+
+
+  <style>
+    h1{
+      padding: 0;
+      margin: 0;
+    }
+    section{
+      display: flex;
+      flex-direction: column;
+      height: 800px;
+      width: 366px;
+    }
+    .title{      
+      align-items: center;
+      background-color: hsl(0, 0%, 0%);
+      display: flex;
+      height: 3rem;
+      gap: 1rem;
+      justify-content: space-between;
+    }
+    .title h1{
+      display: flex;
+      color:hsl(0, 0%, 100%);
+      font-family: ubuntu;
+      gap: 1rem;
+      justify-content: center;
+      padding: 0.5rem;
+    }
+    .title-icon{
+      display: flex;
+      height: 1.8rem;
+    }
+    .title-icon svg{
+      cursor:pointer;
+      fill: hsl(0, 0%, 100%);
+      height: 2rem;
+      width: 2rem;
+    }
+    .container{
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .container_button{
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 30px;
+      width: 100%;
+      
+    }
+    .button_New_order, .button_prev_order{
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      font-family: ubuntu;
+      WIDTH: 80%;
+      BACKGROUND-COLOR: #FFF;
+      BORDER: 0;
+      BORDER-RADIUS: 10PX;
+      HEIGHT: 30PX;
+      ALIGN-ITEMS: center;
+      font-size: 1em;
+      color: #551A8B;
+      font-weight: 700;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <section>
+    <div class="title">
+      <h1>Inicio</h1>
+      <div class="title-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0"><title>arrow-left</title><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </div>      
+    </div>
+    <div class="container">
+      <div class="container_button">
+        <button class="button_New_order">Nuevo pedido</button>
+      </div>
+      <div class="container_button">
+        <button class="button_prev_order">Pedidos anteriores</button>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0"><title>arrow-left</title><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+
+    </div>
+  </section>
+</body>
+</html>
