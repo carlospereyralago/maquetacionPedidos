@@ -20,27 +20,22 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-    }
-    .container{
-      display: flex;
-      flex-direction: column;      
+      padding-top: 25vh;
     }
     .title{      
       align-items: center;
       display: flex;
       height: 3rem;
-      justify-content: center;
       gap: 1rem;
+      justify-content: space-between;
     }
     .title h1{
       display: flex;
       color:hsl(0, 0%, 100%);
       font-family: ubuntu;
-      gap: 2rem;
+      gap: 1rem;
       justify-content: center;
       padding: 0.5rem;
-      font-weight: 700;
-      padding-left: 1rem;
     }
     .title-icon{
       display: flex;
@@ -52,8 +47,14 @@
       height: 2rem;
       width: 2rem;
     }
-    
+    .container{
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      
+    }
     .container_button{
+      cursor: pointer;
       display: flex;
       gap: 1rem;
       justify-content: center;
@@ -61,7 +62,8 @@
       width: 100%;
       
     }
-    .button_send {
+    .button_New_order, .button_prev_order{
+      cursor:pointer;
       display: flex;
       gap: 1rem;
       justify-content: center;
@@ -76,34 +78,29 @@
       color: #551A8B;
       font-weight: 700;
     }
+    .button_New_order:hover, .button_prev_order:hover{
+      color: hsl(0, 0%, 100%);
+      cursor:pointer;
+      display: flex;
+      gap: 1rem;
+     opacity: 0;
+      
+    }
   </style>
   <title>Document</title>
 </head>
 <body>
-  <section>    
+  <section>
+    <div class="title">
+      <h1>Pedidos</h1>     
+    </div>
     <div class="container">
-      <div class="title">
-        <h1>Pedidos</h1>            
+      <div class="container_button">
+        <button class="button_New_order">Nuevo pedido</button>
       </div>
-      <div class="container_form"></div>
-      <form action="/login" method="POST">
-        <fieldset>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <div class="container_button">
-              <button class="button_send">Enviar</button>
-            </div>
-        </fieldset>
-    </form>
-      
-      
-
+      <div class="container_button">
+        <button class="button_prev_order">Pedidos anteriores</button>
+      </div>
     </div>
   </section>
 </body>

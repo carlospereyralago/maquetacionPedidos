@@ -55,6 +55,7 @@
       
     }
     .container_button{
+      cursor: pointer;
       display: flex;
       gap: 1rem;
       justify-content: center;
@@ -63,6 +64,7 @@
       
     }
     .button_New_order, .button_prev_order{
+      cursor:pointer;
       display: flex;
       gap: 1rem;
       justify-content: center;
@@ -77,16 +79,21 @@
       color: #551A8B;
       font-weight: 700;
     }
+    .button_New_order:hover, .button_prev_order:hover{
+      color: hsl(0, 0%, 100%);
+      cursor:pointer;
+      display: flex;
+      gap: 1rem;
+     opacity: 0;
+      
+    }
   </style>
   <title>Document</title>
 </head>
 <body>
   <section>
     <div class="title">
-      <h1>Inicio</h1>
-      <div class="title-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0"><title>arrow-left</title><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
-      </div>      
+      <h1>Inicio</h1>     
     </div>
     <div class="container">
       <div class="container_button">
@@ -95,8 +102,6 @@
       <div class="container_button">
         <button class="button_prev_order">Pedidos anteriores</button>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0"><title>arrow-left</title><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
-
     </div>
   </section>
 </body>
